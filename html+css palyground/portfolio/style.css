@@ -1,0 +1,89 @@
+/*my*/
+body,
+html {
+	height: 100%;
+	background: rgb(20, 20, 20);
+	font-family: "Roboto", sans-serif;
+	overflow: hidden;
+}
+
+.double-slider {
+	position: absolute;
+	z-index: 0;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+	/* display: flex; */
+}
+
+.left-section {
+	position: absolute;
+	z-index: 2;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.right-section {
+	position: relative;
+	z-index: 3;
+	top: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.item {
+	height: 100vh !important;
+}
+
+.profile-text {
+	width: 50vw !important;
+	position: relative;
+	overflow: hidden;
+	border: none;
+	background-color: tomato;
+	text-align: right;
+}
+
+.profile-photo {
+	width: 50vw !important;
+	position: relative;
+	left: 50%;
+	overflow: hidden;
+	border: none;
+	background-color: thistle;
+}
+
+.project-list {
+	width: 50vw !important;
+	position: relative;
+	overflow: hidden;
+	border: none;
+	background-color: yellowgreen;
+}
+
+.project-detail {
+	width: 75vw !important;
+	position: relative;
+	overflow: hidden;
+	left: 25%;
+	border: none;
+	background-color: yellow;
+}
+
+.profile-photo img {
+	width: 30vw;
+	height: 30vw;
+}
+
+.lists {
+	width: 50%;
+	background-color: violet;
+	height: 100vh;
+}
