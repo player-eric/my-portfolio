@@ -32,6 +32,22 @@ $(".right-section")
 		} else {
 			$(".left-section").slick("slickGoTo", totalItems - 1 - nextSlide);
 		}
+
+		switch (nextSlide) {
+			case 0:
+				if (window.innerWidth > 1300) {
+					$(".left-section").css("width", "35vw");
+				} else {
+					$(".left-section").css("width", "50vw");
+				}
+				break;
+			case 1:
+				$(".left-section").css("width", "50vw");
+				break;
+			case 2:
+				$(".left-section").css("width", "10vw");
+				break;
+		}
 	})
 	.on("mousewheel", function (event) {
 		event.preventDefault();
@@ -86,4 +102,8 @@ function toSkills() {
 
 function toProjects() {
 	$(".right-section").slick("slickGoTo", 2);
+}
+
+function toProfile() {
+	$(".right-section").slick("slickGoTo", 0);
 }

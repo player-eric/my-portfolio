@@ -2,6 +2,7 @@ body,
 html {
 	height: 100%;
 	overflow: hidden;
+	background-color: #efe2ba;
 }
 
 .double-slider .slick-dots {
@@ -70,6 +71,18 @@ html {
 	width: 35vw;
 	height: 100vh;
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 1300px) {
+	.left-section {
+		position: absolute;
+		z-index: 2;
+		top: 0;
+		left: 0;
+		width: 50vw;
+		height: 100vh;
+		overflow: hidden;
+	}
 }
 
 .right-section {
@@ -159,6 +172,14 @@ a {
 	padding-bottom: 1%;
 }
 
+#profile-page-arrow {
+	font-size: 70px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
+}
+
 #linkedin-logo {
 	position: relative;
 	top: 5px;
@@ -177,7 +198,6 @@ a {
 
 .profile-photo {
 	position: relative;
-
 	overflow: hidden;
 	border: none;
 	background-color: #d79922;
@@ -217,4 +237,38 @@ a {
 	width: 50%;
 	background-color: violet;
 	height: 100vh;
+}
+
+.skills-left {
+	width: 50vw !important;
+	position: relative;
+	overflow: hidden;
+	border: none;
+	background-color: #efe2ba;
+
+	display: flex;
+	align-content: center;
+	align-items: center;
+}
+
+.skills-right {
+	width: 50vw !important;
+	left: 50%;
+	position: relative;
+	overflow: hidden;
+	border: none;
+	background-color: #d79922;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+#skills-page-arrow {
+	font-size: 70px;
+	cursor: pointer;
+	position: absolute;
+	bottom: 5%;
+	right: 5%;
 }
