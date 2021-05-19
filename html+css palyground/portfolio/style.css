@@ -67,14 +67,14 @@ html {
 	z-index: 2;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 35vw;
 	height: 100vh;
 	overflow: hidden;
 }
 
 .right-section {
 	position: relative;
-	z-index: 3;
+	z-index: 1;
 	top: 0;
 	width: 100vw;
 	height: 100vh;
@@ -176,7 +176,6 @@ a {
 }
 
 .profile-photo {
-	width: 50vw !important;
 	position: relative;
 
 	overflow: hidden;
