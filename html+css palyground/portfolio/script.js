@@ -15,6 +15,7 @@ $(".right-section")
 		cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
 
 		touchThreshold: 20,
+		mobileFirst: true,
 	})
 	.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
 		if (
@@ -69,6 +70,7 @@ $(".left-section")
 		initialSlide: totalItems - 1,
 
 		touchThreshold: 20,
+		mobileFirst: true,
 	})
 	.on("beforeChange", function (event, slick, currentSlide, nextSlide) {
 		if (
