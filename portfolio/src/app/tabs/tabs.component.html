@@ -1,3 +1,5 @@
-<button (click)="toProfile()" [ngClass]="active=='about'?'active':'notactive'">About</button>
-<button (click)="toSkills()" [ngClass]="active=='skills'?'active':'notactive'">Skills</button>
-<button (click)="toProjects()" [ngClass]="active=='projects'?'active':'notactive'">Projects</button>
+<div class="vertical-wrapper">
+    <button (click)="toProfile()" [ngClass]="active=='about'?'active':'notactive'">About</button>
+    <button (click)="toSkills()" [ngClass]="active=='skills'?'active':'notactive'">Skills</button>
+    <button (click)="toProjects()" [ngClass]="active=='projects'?'active':'notactive'">Projects</button>
+</div>

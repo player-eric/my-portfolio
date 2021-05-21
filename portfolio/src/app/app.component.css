@@ -5,7 +5,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  /* overflow: hidden; */
   background-color: #efe2ba;
 }
 
@@ -28,6 +27,9 @@
     width: 50vw !important;
     height: 100vh;
     overflow: hidden;
+
+    border: none !important;
+    margin: none !important;
   }
 }
 
@@ -45,7 +47,7 @@
 }
 
 .profile-text {
-  width: 64vw !important;
+  width: 65vw !important;
   left: 35%;
 
   position: relative;
@@ -81,7 +83,7 @@ a {
 
 .bio {
   position: absolute;
-  width: 100%;
+  width: 95%;
   top: 10%;
   left: 1%;
 
@@ -106,7 +108,7 @@ a {
 #signature {
   height: 40px;
   width: 125px;
-  padding-left: 1%;
+
   align-self: center;
 }
 
@@ -164,7 +166,7 @@ a {
 .profile-photo-card {
   height: 100vh;
   width: 35vw;
-  position: relative;
+
   overflow: hidden;
   border: none;
   background-color: #d79922;
@@ -211,29 +213,6 @@ a {
     left: 2.5vw;
     top: 20vh !important;
   }
-}
-
-.project-list {
-  width: 50vw !important;
-  position: relative;
-  overflow: hidden;
-  border: none;
-  background-color: yellowgreen;
-}
-
-.project-detail {
-  width: 75vw !important;
-  position: relative;
-  overflow: hidden;
-  left: 25%;
-  border: none;
-  background-color: yellow;
-}
-
-.lists {
-  width: 50%;
-  background-color: violet;
-  height: 100vh;
 }
 
 .skills-left {
@@ -337,8 +316,58 @@ a {
 
 .nav-tabs {
   position: absolute;
-  bottom: 0;
+  bottom: 15vh;
   right: 0;
-  width: 30vw;
-  height: 5vh;
+  width: 12vw;
+  height: 15vh;
+}
+
+.project-list {
+  position: relative;
+  overflow: hidden;
+  border: none !important;
+
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+.project-list-card {
+  height: 100vh;
+  width: 25vw;
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: #d79922;
+
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+
+@media only screen and (max-width: 1300px) {
+  .project-list-card {
+    height: 100vh;
+    width: 50vw !important;
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: #d79922;
+
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+  }
+}
+
+.project-detail {
+  width: 75vw !important;
+  left: 25%;
+
+  position: relative;
+  overflow: hidden;
+  border: none;
+  background-color: #efe2ba;
+
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }

@@ -15,15 +15,21 @@ export class TabsComponent implements OnInit {
   }
 
   toProfile() {
-    $(".right-section").slick("slickGoTo", 0);
+    if ($(".right-section").slick('slickCurrentSlide') !== 0) {
+      $(".right-section").slick("slickGoTo", 0);
+    }
   }
 
   toSkills() {
-    $(".right-section").slick("slickGoTo", 1);
+    if ($(".right-section").slick('slickCurrentSlide') !== 1) {
+      $(".right-section").slick("slickGoTo", 1);
+    }
   }
 
   toProjects() {
-    $(".right-section").slick("slickGoTo", 2);
+    if ($(".right-section").slick('slickCurrentSlide') !== 2) {
+      $(".right-section").slick("slickGoTo", 2);
+    }
   }
 
 }

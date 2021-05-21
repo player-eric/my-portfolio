@@ -60,7 +60,12 @@ export class AppComponent implements OnInit {
               $(".left-section").css("width", "50vw");
               break;
             case 2:
-              $(".left-section").css("width", "10vw");
+              if (window.innerWidth > 1300) {
+                $(".left-section").css("width", "25vw");
+              }
+              else {
+                $(".left-section").css("width", "50vw");
+              }
               break;
           }
         })
@@ -73,10 +78,17 @@ export class AppComponent implements OnInit {
           if (event.deltaX < 0 || event.deltaY > 0) {
             $(this).slick("slickPrev");
           } else if (event.deltaX > 0 || event.deltaY < 0) {
-            $(this).slick("slickNext");
+            const currentSlide = $(".right-section").slick('slickCurrentSlide');
+            if (currentSlide !== totalItems-1) {
+              $(this).slick("slickNext");
+            }
+            else {
+              $(".right-section").slick("slickGoTo", 0);
+            }
           }
         });
 
+    
       $(".left-section")
         .slick({
           swipe: false,
