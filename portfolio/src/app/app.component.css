@@ -316,7 +316,7 @@ a {
 
 .nav-tabs {
   position: absolute;
-  bottom: 15vh;
+  bottom: 13vh;
   right: 0;
   width: 12vw;
   height: 15vh;
@@ -329,6 +329,16 @@ a {
 
   border-top-right-radius: 5rem;
   border-bottom-right-radius: 5rem;
+}
+
+#project-list-title {
+  position: absolute;
+  top: 1vh;
+  left: 1vw;
+  font-size: xx-large;
+  font-weight: bold;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana,
+    sans-serif;
 }
 
 .project-list-card {
@@ -357,6 +367,26 @@ a {
   }
 }
 
+.project-list-container {
+  position: absolute;
+  top: 5vh;
+  left: 1vw;
+  height: 90vh;
+  width: 20vw;
+  border: solid 10px tomato;
+}
+
+@media only screen and (max-width: 1300px) {
+  .project-list-container {
+    position: absolute;
+    top: 5vh;
+    left: 1vw;
+    height: 90vh;
+    width: 45vw;
+    border: solid 10px tomato;
+  }
+}
+
 .project-detail {
   width: 75vw !important;
   left: 25%;
@@ -370,4 +400,41 @@ a {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  .project-detail {
+    width: 50vw !important;
+    left: 50%;
+
+    position: relative;
+    overflow: hidden;
+    border: none;
+    background-color: #efe2ba;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+}
+
+.project-detail-container {
+  position: absolute;
+  top: 5vh;
+  left: 1vw;
+  width: 70vw;
+  height: 90vh;
+  border: solid 10px tomato;
+}
+
+@media only screen and (max-width: 1300px) {
+  .project-detail-container {
+    position: absolute;
+    top: 5vh;
+    left: 1vw;
+    width: 45vw;
+    height: 90vh;
+    border: solid 10px tomato;
+  }
 }
