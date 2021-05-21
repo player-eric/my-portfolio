@@ -5,7 +5,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #efe2ba;
 }
 
@@ -45,8 +45,9 @@
 }
 
 .profile-text {
-  width: 65vw !important;
+  width: 64vw !important;
   left: 35%;
+
   position: relative;
   overflow: hidden;
   border: none;
@@ -80,6 +81,7 @@ a {
 
 .bio {
   position: absolute;
+  width: 100%;
   top: 10%;
   left: 1%;
 
@@ -89,23 +91,27 @@ a {
 
 .name-sig {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding-bottom: 1%;
 }
 
 #name {
   font-family: Lucida Bright, Georgia, serif;
-  font-size: 40px;
+  font-size: 35px;
   font-weight: bold;
+  align-self: center;
 }
 
 #signature {
-  height: 50px;
+  height: 40px;
+  width: 125px;
   padding-left: 1%;
+  align-self: center;
 }
 
 #email {
-  font-size: 30px;
+  font-size: 3vw;
   color: black;
   align-self: center;
   padding-bottom: 2%;
@@ -184,7 +190,7 @@ a {
 #simao-img {
   position: absolute;
   bottom: 1%;
-  left: 25%;
+  left: 5%;
 }
 
 #selfie {
@@ -203,7 +209,7 @@ a {
     height: 45vw !important;
     position: relative;
     left: 2.5vw;
-    top: 5vh !important;
+    top: 20vh !important;
   }
 }
 
