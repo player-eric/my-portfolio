@@ -1,0 +1,17 @@
+button {
+  width: 10vw;
+  height: 5vh;
+  background-color: #c5cbe3;
+  padding: 0;
+  border: 0;
+  font-weight: bold;
+  font-size: x-large;
+
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 1rem;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: #4056a1;
+}

@@ -1,6 +1,6 @@
 .double-slider {
   position: absolute;
-  z-index: 0;
+
   top: 0;
   left: 0;
   width: 100vw;
@@ -149,7 +149,7 @@ a {
 .profile-photo {
   position: relative;
   overflow: hidden;
-  border: none;
+  border: none !important;
 
   border-top-right-radius: 5rem;
   border-bottom-right-radius: 5rem;
@@ -327,4 +327,12 @@ a {
   text-align: center;
   font-size: larger;
   padding-top: 2px;
+}
+
+.nav-tabs {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 30vw;
+  height: 5vh;
 }

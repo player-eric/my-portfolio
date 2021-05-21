@@ -166,8 +166,6 @@
           <div class="single-skill"></div>
         </div>
       </div>
-
-
     </div>
 
     <div class="item project-list">
@@ -177,8 +175,6 @@
       </div>
 
     </div>
-
-
   </div>
 
   <div class="right-section">
@@ -215,8 +211,11 @@
             resume</a>
           for more of my
           professional experience.</span>
-      </div>
 
+      </div>
+      <div class="nav-tabs">
+        <app-tabs [active]="'profile'"></app-tabs>
+      </div>
 
     </div>
 
@@ -304,6 +303,9 @@
 
       <div class="skills-page-triangle"></div>
 
+      <div class="nav-tabs">
+        <app-tabs [active]="'skills'"></app-tabs>
+      </div>
     </div>
 
     <div class="item project-detail">
@@ -312,4 +314,5 @@
 
 
   </div>
+
 </div>
