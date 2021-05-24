@@ -370,20 +370,16 @@ a {
 .project-list-container {
   position: absolute;
   top: 5vh;
-  left: 1vw;
   height: 90vh;
-  width: 20vw;
-  border: solid 10px tomato;
+  width: 24vw;
 }
 
 @media only screen and (max-width: 1300px) {
   .project-list-container {
     position: absolute;
     top: 5vh;
-    left: 1vw;
     height: 90vh;
     width: 45vw;
-    border: solid 10px tomato;
   }
 }
 
