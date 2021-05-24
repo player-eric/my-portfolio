@@ -1,0 +1,60 @@
+.project-list-item {
+  color: black;
+  text-decoration: none;
+}
+
+.project-list-item.active {
+  color: black;
+  text-decoration: none;
+}
+
+.project-list-item .project-item-horizontal-wrapper {
+  background-color: #efe2ba;
+  background-clip: content-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+
+  width: 90%;
+}
+
+.project-list-item.active .project-item-horizontal-wrapper {
+  background-color: #efe2ba;
+  background-clip: content-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+
+  width: 100%;
+}
+
+.project-item-vertical-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 5%;
+}
+
+.project-item-name {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.project-item-tech {
+  font-size: large;
+  font-style: italic;
+}
+
+.project-item-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}

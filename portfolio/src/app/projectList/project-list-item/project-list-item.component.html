@@ -1,0 +1,9 @@
+<a style="cursor: pointer;" [routerLink]="project.name" routerLinkActive="active" class="project-list-item">
+    <div class="project-item-horizontal-wrapper">
+        <div class="project-item-vertical-wrapper">
+            <span class="project-item-name">{{ project.name }}</span>
+            <span class="project-item-tech">{{ project.techStack }}</span>
+        </div>
+        <img [src]="project.iconPath" alt="{{ project.name }}" class="project-item-icon">
+    </div>
+</a>
