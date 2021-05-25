@@ -46,10 +46,12 @@
 .project-item-name {
   font-size: x-large;
   font-weight: bold;
+  font-family: Lucida Grande, Lucida Sans Unicode, Lucida Sans, Geneva, Verdana,
+    sans-serif;
 }
 
 .project-item-tech {
-  font-size: large;
+  font-size: x-large;
   font-style: italic;
 }
 
