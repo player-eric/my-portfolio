@@ -424,7 +424,7 @@ a {
   left: 1vw;
   width: 70vw;
   height: 90vh;
-  border: solid 10px tomato;
+  /* border: solid 10px tomato; */
 }
 
 @media only screen and (max-width: 1300px) {
@@ -435,6 +435,6 @@ a {
     left: 1vw;
     width: 45vw;
     height: 90vh;
-    border: solid 10px tomato;
+    /* border: solid 10px tomato; */
   }
 }
