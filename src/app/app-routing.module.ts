@@ -13,7 +13,7 @@ const routes: Routes = [
       path: '', component: ProjectDetailStartComponent 
       },
       {
-      path: ':projectname', component:ProjectDetailComponent
+      path: ':projectname', component: ProjectDetailComponent
       }
   ]}
 ];

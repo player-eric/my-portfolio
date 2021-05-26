@@ -9,6 +9,13 @@ import { ProjectListComponent } from './projectList/project-list/project-list.co
 import { ProjectListItemComponent } from './projectList/project-list-item/project-list-item.component';
 import { ProjectDetailComponent } from './projectList/project-detail/project-detail.component';
 import { ProjectDetailStartComponent } from './projectList/project-detail-start/project-detail-start.component';
+import { ProjectDetailDirective } from './projectList/project-detail/project-detail.directive';
+import { BrownbytesComponent } from './projectDetails/brownbytes/brownbytes.component';
+import { CoveryournoseComponent } from './projectDetails/coveryournose/coveryournose.component';
+import { NmtvisComponent } from './projectDetails/nmtvis/nmtvis.component';
+import { AnimizeComponent } from './projectDetails/animize/animize.component';
+import { MtqeComponent } from './projectDetails/mtqe/mtqe.component';
+import { NeuosComponent } from './projectDetails/neuos/neuos.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +25,14 @@ import { ProjectDetailStartComponent } from './projectList/project-detail-start/
     ProjectListComponent,
     ProjectListItemComponent,
     ProjectDetailComponent,
-    ProjectDetailStartComponent
+    ProjectDetailStartComponent,
+    ProjectDetailDirective,
+    BrownbytesComponent,
+    CoveryournoseComponent,
+    NmtvisComponent,
+    AnimizeComponent,
+    MtqeComponent,
+    NeuosComponent
   ],
   imports: [
     BrowserModule,
