@@ -1,0 +1,25 @@
+img {
+  width: 70%;
+  margin: auto;
+  display: block;
+}
+
+@media only screen and (max-width: 1300px) {
+  img {
+    width: 100%;
+    margin: auto;
+    display: block;
+  }
+}
+
+p {
+  text-align: left;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: x-large;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+a {
+  color: black;
+}

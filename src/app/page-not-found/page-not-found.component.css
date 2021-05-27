@@ -1,0 +1,11 @@
+h1 {
+  font-weight: bolder;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+}
+
+img {
+  margin: auto;
+  display: block;
+}

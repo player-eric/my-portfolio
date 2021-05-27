@@ -16,6 +16,7 @@ import { NmtvisComponent } from './projectDetails/nmtvis/nmtvis.component';
 import { AnimizeComponent } from './projectDetails/animize/animize.component';
 import { MtqeComponent } from './projectDetails/mtqe/mtqe.component';
 import { NeuosComponent } from './projectDetails/neuos/neuos.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NeuosComponent } from './projectDetails/neuos/neuos.component';
     NmtvisComponent,
     AnimizeComponent,
     MtqeComponent,
-    NeuosComponent
+    NeuosComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
