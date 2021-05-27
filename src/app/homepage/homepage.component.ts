@@ -21,7 +21,7 @@ export class HomepageComponent implements OnInit {
           verticalSwiping: true,
           arrows: false,
           infinite: true,
-          speed: 300,
+          speed: 500,
           cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
         
           touchThreshold: 20,
@@ -96,7 +96,7 @@ export class HomepageComponent implements OnInit {
           vertical: true,
           arrows: false,
           infinite: true,
-          speed: 300,
+          speed: 500,
           cssEase: "cubic-bezier(0.7, 0, 0.3, 1)",
           initialSlide: totalItems - 1,
 

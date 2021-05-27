@@ -6,9 +6,9 @@ import { ProjectDetailComponent } from './projectList/project-detail/project-det
 import { ProjectDetailStartComponent } from './projectList/project-detail-start/project-detail-start.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 const routes: Routes = [
-  { path: '', redirectTo: '/homepage', pathMatch: 'full' },
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
   {
-    path: 'homepage', component: HomepageComponent, children: [
+    path: 'about', component: HomepageComponent, children: [
       {
       path: '', component: ProjectDetailStartComponent 
       },
