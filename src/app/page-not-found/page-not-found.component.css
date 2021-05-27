@@ -9,3 +9,12 @@ img {
   margin: auto;
   display: block;
 }
+
+a {
+  font-weight: bold;
+  font-size: xx-large;
+  text-align: center;
+  color: white;
+  margin: auto;
+  display: block;
+}
