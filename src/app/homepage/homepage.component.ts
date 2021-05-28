@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+
 declare var $: any;
 @Component({
   selector: 'app-homepage',
@@ -130,27 +131,27 @@ export class HomepageComponent implements OnInit {
           }
         });
     
-    // fetch('http://api.ipstack.com/check?access_key=8e1dadaf9c1615c6dc2508b7ce3fc096')
-    //   .then(response => response.json())
-    //   .then(
-    //     (data) => {
-    //       const xhr = new XMLHttpRequest();
-    //       const url = "https://portfolio-4a731-default-rtdb.firebaseio.com/visitors.json";
-    //       xhr.open("POST", url, true);
-    //       xhr.setRequestHeader("Content-Type", "application/json");
-    //       const info = JSON.stringify({
-    //         "time:": new Date().toLocaleString(),
-    //         "city": data.city,
-    //         "continent": data.continent_name,
-    //         "country": data.country_name,
-    //         "ip": data.ip,
-    //         "latitude": data.latitude,
-    //         "longitude": data.longitude,
-    //         "region": data.region_name,
-    //         "zip": data.zip
-    //       });
-    //       xhr.send(info);
-    //     });
+    fetch('http://api.ipstack.com/check?access_key=8e1dadaf9c1615c6dc2508b7ce3fc096')
+      .then(response => response.json())
+      .then(
+        (data) => {
+          const xhr = new XMLHttpRequest();
+          const url = "https://portfolio-4a731-default-rtdb.firebaseio.com/visitors.json";
+          xhr.open("POST", url, true);
+          xhr.setRequestHeader("Content-Type", "application/json");
+          const info = JSON.stringify({
+            "time:": new Date().toLocaleString(),
+            "city": data.city,
+            "continent": data.continent_name,
+            "country": data.country_name,
+            "ip": data.ip,
+            "latitude": data.latitude,
+            "longitude": data.longitude,
+            "region": data.region_name,
+            "zip": data.zip
+          });
+          xhr.send(info);
+        });
   }
 
   toSkills() {
