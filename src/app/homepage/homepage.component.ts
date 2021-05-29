@@ -151,6 +151,7 @@ export class HomepageComponent implements OnInit {
             "zip": data.zip
           });
           xhr.send(info);
+          console.log("Hello!")
         });
   }
 
